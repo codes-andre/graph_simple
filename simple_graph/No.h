@@ -6,7 +6,5 @@ class No
 {
 public:
 	string nome;
-	No();
-	~No();
 };
 
