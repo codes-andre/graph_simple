@@ -1,19 +1,20 @@
 #pragma once
 #include "No.h"
-#include <vector>
 #include <string>
 #include <iostream>
+#include <stdlib.h>
+
 using namespace std;
 
 class Grafo
 {
 private:
-    bool isPosValid(int i, int j);
+    bool isPositionValid(int i, int j);
+    const string INFINITY = u8"\u221E";
 public:
 	int tamanho;
-    const char INFINITY = 126;
 	double** matrixadj;
-    bool** matrixTouches;
+//    bool** matrixTouches;
 	No *vertices;
     /** Constr—i um grafo de tamanho e. */
 	Grafo(int e);

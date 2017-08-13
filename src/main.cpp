@@ -26,20 +26,20 @@ int  main() {
     g->cria_adjacencia(0, 1, 27);
     g->cria_adjacencia(1, 2, 7);
     g->cria_adjacencia(2, 3, 19);
-    g->cria_adjacencia(2, 4, 22);
+    g->cria_adjacencia(2, 4, -22);
     g->cria_adjacencia(3, 1, 4);
     g->cria_adjacencia(4, 0, 12);
+    g->cria_adjacencia(-1, 0, -5);
         
     g->imprime_adjacencias();
     
     countAdj = g->adjacentes(2, adjacentes);
     printAdjacentes(countAdj, adjacentes);
     
-    g->remove_adjacencia(2, 4);
+    g->remove_adjacencia(2, 1);
     
     g->imprime_adjacencias();
     
     countAdj = g->adjacentes(2, adjacentes);
     printAdjacentes(countAdj, adjacentes);
-    
 }
